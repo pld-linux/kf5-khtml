@@ -127,18 +127,11 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmlpart.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/kjavaappletviewer.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/kmultipart.so
-%{_datadir}/kf5/khtml/css/html4.css
-%{_datadir}/kf5/khtml/css/presentational.css
-%{_datadir}/kf5/khtml/css/quirks.css
-%{_datadir}/kf5/khtml/error.html
-%{_datadir}/kf5/kjava/kjava.jar
-%{_datadir}/kf5/kjava/kjava.policy
-%{_datadir}/kf5/kjava/pluginsinfo
+%{_datadir}/kf5/khtml
+%{_datadir}/kf5/kjava
 %dir %{_datadir}/kxmlgui5/khtml
 %{_datadir}/kxmlgui5/khtml/khtml.rc
 %{_datadir}/kxmlgui5/khtml/khtml_browser.rc
-#%{_datadir}/khtml/khtml5.rc
-#%{_datadir}/khtml/khtml5_browser.rc
 %{_datadir}/kservices5/khtml.desktop
 %{_datadir}/kservices5/khtmladaptorpart.desktop
 %{_datadir}/kservices5/khtmlimage.desktop

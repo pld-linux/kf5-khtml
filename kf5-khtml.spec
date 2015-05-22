@@ -7,18 +7,18 @@
 # /usr/share/kf5/kjava
 # /usr/share/khtml
 # /usr/share/kservices5 
-%define		kdeframever	5.4
+%define		kdeframever	5.10
 %define		qtver		5.3.2
 %define		kfname		khtml
 
 Summary:	HTML rendering engine
 Name:		kf5-%{kfname}
-Version:	5.4.0
+Version:	5.10.0
 Release:	0.1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	65f90421ff7c061b025251ad07373d18
+# Source0-md5:	8ac7fa3dc1714010a91b8f53e525dea0
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -121,7 +121,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.md
 /etc/xdg/khtmlrc
 %attr(755,root,root) %ghost %{_libdir}/libKF5KHtml.so.5
-%attr(755,root,root) %{_libdir}/libKF5KHtml.so.5.4.0
+%attr(755,root,root) %{_libdir}/libKF5KHtml.so.*.*
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmladaptorpart.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmlimagepart.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmlpart.so

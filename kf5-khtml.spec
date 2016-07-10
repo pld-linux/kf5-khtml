@@ -121,9 +121,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/kmultipart.so
 %{_datadir}/kf5/khtml
 %{_datadir}/kf5/kjava
-%dir %{_datadir}/kxmlgui5/khtml
-%{_datadir}/kxmlgui5/khtml/khtml.rc
-%{_datadir}/kxmlgui5/khtml/khtml_browser.rc
+#%%dir %{_datadir}/kxmlgui5/khtml
+#%%{_datadir}/kxmlgui5/khtml/khtml.rc
+#%%{_datadir}/kxmlgui5/khtml/khtml_browser.rc
 %{_datadir}/kservices5/khtml.desktop
 %{_datadir}/kservices5/khtmladaptorpart.desktop
 %{_datadir}/kservices5/khtmlimage.desktop

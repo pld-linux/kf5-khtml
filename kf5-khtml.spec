@@ -81,6 +81,7 @@ Requires:	kf5-ki18n-devel >= %{version}
 Requires:	kf5-kio-devel >= %{version}
 Requires:	kf5-kjs-devel >= %{version}
 Requires:	kf5-kparts-devel >= %{version}
+Requires:	kf5-ktextwidgets-devel >= %{version}
 
 %description devel
 Header files for %{kfname} development.

@@ -76,6 +76,11 @@ Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	kf5-kcodecs-devel >= %{version}
+Requires:	kf5-ki18n-devel >= %{version}
+Requires:	kf5-kio-devel >= %{version}
+Requires:	kf5-kjs-devel >= %{version}
+Requires:	kf5-kparts-devel >= %{version}
 
 %description devel
 Header files for %{kfname} development.

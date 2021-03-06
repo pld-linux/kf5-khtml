@@ -1,15 +1,15 @@
-%define		kdeframever	5.67
+%define		kdeframever	5.79
 %define		qtver		5.9.0
 %define		kfname		khtml
 
 Summary:	HTML rendering engine
 Name:		kf5-%{kfname}
-Version:	5.67.0
+Version:	5.79.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	8c4ec0e9a3ac90622c64ecc0e3329d91
+# Source0-md5:	79a58b58e4a14717413ab4344e5d9f84
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -126,15 +126,13 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/kmultipart.so
 %{_datadir}/kf5/khtml
 %{_datadir}/kf5/kjava
-#%%dir %{_datadir}/kxmlgui5/khtml
-#%%{_datadir}/kxmlgui5/khtml/khtml.rc
-#%%{_datadir}/kxmlgui5/khtml/khtml_browser.rc
 %{_datadir}/kservices5/khtml.desktop
 %{_datadir}/kservices5/khtmladaptorpart.desktop
 %{_datadir}/kservices5/khtmlimage.desktop
 %{_datadir}/kservices5/kjavaappletviewer.desktop
 %{_datadir}/kservices5/kmultipart.desktop
 %{_datadir}/qlogging-categories5/khtml.categories
+%{_datadir}/qlogging-categories5/khtml.renamecategories
 
 %files devel
 %defattr(644,root,root,755)

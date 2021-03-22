@@ -1,15 +1,15 @@
-%define		kdeframever	5.79
+%define		kdeframever	5.80
 %define		qtver		5.9.0
 %define		kfname		khtml
 
 Summary:	HTML rendering engine
 Name:		kf5-%{kfname}
-Version:	5.79.0
+Version:	5.80.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	79a58b58e4a14717413ab4344e5d9f84
+# Source0-md5:	8160d484f56142b183f08d59990b26c3
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -117,7 +117,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.md
 /etc/xdg/khtmlrc
-%attr(755,root,root) %ghost %{_libdir}/libKF5KHtml.so.5
+%ghost %{_libdir}/libKF5KHtml.so.5
 %attr(755,root,root) %{_libdir}/libKF5KHtml.so.*.*
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmladaptorpart.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmlimagepart.so
@@ -139,5 +139,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/KF5/KHtml
 %{_includedir}/KF5/khtml_version.h
 %{_libdir}/cmake/KF5KHtml
-%attr(755,root,root) %{_libdir}/libKF5KHtml.so
+%{_libdir}/libKF5KHtml.so
 %{qt5dir}/mkspecs/modules/qt_KHtml.pri

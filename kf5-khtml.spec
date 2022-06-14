@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	5.94
+%define		kdeframever	5.95
 %define		qtver		5.9.0
 %define		kfname		khtml
 
 Summary:	HTML rendering engine
 Name:		kf5-%{kfname}
-Version:	5.94.0
+Version:	5.95.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	3afa34590fcc12338c17118859a604b3
+# Source0-md5:	6b4ad6a94c24979236149b506c7c1057
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -131,14 +131,11 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmladaptorpart.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmlimagepart.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/khtmlpart.so
-%attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/kjavaappletviewer.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/kf5/parts/kmultipart.so
 %{_datadir}/kf5/khtml
-%{_datadir}/kf5/kjava
 %{_datadir}/kservices5/khtml.desktop
 %{_datadir}/kservices5/khtmladaptorpart.desktop
 %{_datadir}/kservices5/khtmlimage.desktop
-%{_datadir}/kservices5/kjavaappletviewer.desktop
 %{_datadir}/kservices5/kmultipart.desktop
 %{_datadir}/qlogging-categories5/khtml.categories
 %{_datadir}/qlogging-categories5/khtml.renamecategories

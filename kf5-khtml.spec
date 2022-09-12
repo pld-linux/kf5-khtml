@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	5.97
+%define		kdeframever	5.98
 %define		qtver		5.15.2
 %define		kfname		khtml
 
 Summary:	HTML rendering engine
 Name:		kf5-%{kfname}
-Version:	5.97.0
-Release:	2
+Version:	5.98.0
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	4fd0814002839e5b59f51900d0b78e58
+# Source0-md5:	9d17d7e40b541cafd362d7d28c961fd8
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
